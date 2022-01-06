@@ -1,0 +1,2 @@
+rootProject.name='DiGeometri'
+include ':app'
