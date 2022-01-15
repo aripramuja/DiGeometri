@@ -14,6 +14,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this,RegisterActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
+        setContentView(R.layout.activity_login)
+        btnmainPage.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
+        }
     }
 }
 
