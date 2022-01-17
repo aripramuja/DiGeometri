@@ -58,13 +58,13 @@
 
                             <ImageView
                                 android:id="@+id/btnFlatType"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="75dp"
+                                android:layout_height="76dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_1" />
+                                app:srcCompat="@drawable/segitigaabc_white" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -113,7 +113,7 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:background="@drawable/purple2_background">
 
                             <TextView
@@ -152,7 +152,7 @@
                                 android:layout_height="60dp"
                                 android:layout_marginTop="16dp"
                                 android:ems="10"
-                                android:hint="a"
+                                android:hint="b"
                                 android:inputType="textPersonName"
                                 android:padding="10dp"
                                 android:textColor="#7a7a7a"
@@ -163,14 +163,14 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:background="@drawable/purple2_background">
 
                             <TextView
                                 android:id="@+id/btnFlatType2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="a"
+                                android:text="b"
                                 android:textColor="#7868e5"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
@@ -202,7 +202,7 @@
                                 android:layout_height="60dp"
                                 android:layout_marginTop="16dp"
                                 android:ems="10"
-                                android:hint="a"
+                                android:hint="c"
                                 android:inputType="textPersonName"
                                 android:padding="10dp"
                                 android:textColor="#7a7a7a"
@@ -213,14 +213,14 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:background="@drawable/purple2_background">
 
                             <TextView
                                 android:id="@+id/btnFlatType2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="a"
+                                android:text="c"
                                 android:textColor="#7868e5"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
@@ -266,7 +266,7 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rumus keliling persegi : 4 x s"
+                    android:text="Rumus keliling segitiga : a + b + c"
                     android:textColor="#373737"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -276,7 +276,7 @@
                     android:id="@+id/textView109"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hasilnya: ...."
+                    android:text="Hasilnya: ..."
                     android:textColor="#373737"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
