@@ -7,447 +7,456 @@
     android:background="#EDE7F8"
     tools:context=".GeometryTypesActivity">
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
+        android:id="@+id/country_recycler"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="32dp"
-            android:paddingEnd="32dp">
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="32dp"
-                app:srcCompat="@drawable/bell" />
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingStart="32dp"-->
+<!--            android:paddingEnd="32dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                app:srcCompat="@drawable/bell" />-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:orientation="vertical">-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/btnFlatMain"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_1" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/btnFlatMain"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_1" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Segitiga"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Segitiga"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_2" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imageView8"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_2" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Persegi"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-                </LinearLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Persegi"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_3" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imageView8"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_3" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Pesegi Panjang"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Pesegi Panjang"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_4" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imageView8"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_4" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Jajar Genjang"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-                </LinearLayout>
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Jajar Genjang"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
 
-                <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_background"
-                    android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/purple_background">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/white_background"-->
+<!--                    android:orientation="vertical">-->
 
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_1" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="75dp"-->
+<!--                        android:layout_height="75dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:background="@drawable/purple_background">-->
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@drawable/purple2_background">
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:srcCompat="@drawable/ic_1" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Lingkaran"
-                            android:textColor="#7868e5"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:background="@drawable/purple2_background">-->
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/white_background"
-                    android:orientation="vertical">
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView11"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Lingkaran"-->
+<!--                            android:textColor="#7868e5"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </LinearLayout>-->
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/purple_background">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/white_background"-->
+<!--                    android:orientation="vertical">-->
 
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_2" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="75dp"-->
+<!--                        android:layout_height="75dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:background="@drawable/purple_background">-->
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@drawable/purple2_background">
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:srcCompat="@drawable/ic_2" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Layang-Layang"
-                            android:textColor="#7868e5"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:background="@drawable/purple2_background">-->
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
-            </LinearLayout>
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView11"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Layang-Layang"-->
+<!--                            android:textColor="#7868e5"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_1" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imageView8"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_1" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Belaketupat"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Belaketupat"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/white_background"
-                        android:orientation="vertical">
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_margin="8dp"
-                            android:background="@drawable/purple_background">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:layout_marginBottom="16dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/white_background"-->
+<!--                        android:orientation="vertical">-->
 
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_2" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="75dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_margin="8dp"-->
+<!--                            android:background="@drawable/purple_background">-->
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:background="@drawable/purple2_background">
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imageView8"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_2" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-                            <TextView
-                                android:id="@+id/textView11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Trapesium"
-                                android:textColor="#7868e5"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:background="@drawable/purple2_background">-->
 
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+<!--                            <TextView-->
+<!--                                android:id="@+id/textView11"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Trapesium"-->
+<!--                                android:textColor="#7868e5"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:textStyle="bold"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
