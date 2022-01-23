@@ -58,7 +58,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/btnFlatMain"
+                                android:id="@+id/btnFlatSegitiga"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -106,7 +106,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/btnFlatPersegi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -160,7 +160,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/btnFlatPerPanjang"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -208,7 +208,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/btnFlatJarGen"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -263,7 +263,7 @@
                         android:background="@drawable/purple_background">
 
                         <ImageView
-                            android:id="@+id/imageView8"
+                            android:id="@+id/btnFlatLingkaran"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -311,7 +311,7 @@
                         android:background="@drawable/purple_background">
 
                         <ImageView
-                            android:id="@+id/imageView8"
+                            android:id="@+id/btnFlatLayang2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -366,7 +366,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/btnFlatBlhKetupat"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -415,7 +415,7 @@
                             android:background="@drawable/purple_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/btnFlatTrapesium"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
