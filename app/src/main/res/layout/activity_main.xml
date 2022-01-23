@@ -102,8 +102,8 @@
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
+                            android:layout_width="73dp"
+                            android:layout_height="76dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_margin="8dp"
                             android:background="@drawable/purple_background">
@@ -116,7 +116,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_1" />
+                                app:srcCompat="@drawable/logo_bangundatar" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -128,7 +128,7 @@
                                 android:id="@+id/btnFlatType2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Datar"
+                                android:text="Bangun Datar"
                                 android:textColor="#7868e5"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
@@ -164,7 +164,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_2" />
+                                app:srcCompat="@drawable/logo_bangunruang" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -176,7 +176,7 @@
                                 android:id="@+id/textView11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ruang"
+                                android:text="Bangun Ruang"
                                 android:textColor="#7868e5"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
