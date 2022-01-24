@@ -15,9 +15,6 @@
             android:name=".LingkaranMainActivity"
             android:exported="true" />
         <activity
-            android:name=".LingkaranMainActivity2"
-            android:exported="true" />
-        <activity
             android:name=".PPanjangMainActivity"
             android:exported="true" />
         <activity
