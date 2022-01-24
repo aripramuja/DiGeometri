@@ -49,7 +49,7 @@ class GeometryTypesActivity : AppCompatActivity() {
         }
 
         flatJGBtn.setOnClickListener {
-            startActivity(Intent(this,GeometryMainActivity::class.java))
+            startActivity(Intent(this,JarGenMainActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
 
