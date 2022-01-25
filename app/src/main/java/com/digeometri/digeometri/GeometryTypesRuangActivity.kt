@@ -13,7 +13,7 @@ class GeometryTypesRuangActivity : AppCompatActivity(){
 
         FlatMainBtn = findViewById(R.id.btnFlatMain)
         FlatMainBtn.setOnClickListener {
-            startActivity(Intent(this,GeometryMainActivity::class.java))
+            startActivity(Intent(this,SegitigaMainActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
     }
