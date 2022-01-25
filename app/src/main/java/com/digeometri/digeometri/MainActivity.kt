@@ -21,15 +21,15 @@ class MainActivity : AppCompatActivity() {
         FlatTypeBtn2 = findViewById(R.id.btnFlatType2)
 
         FlatTypeBtn.setOnClickListener {
-            startActivity(Intent(this,GeometryTypesActivity::class.java))
+            startActivity(Intent(this,DatarTypesActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
         SpaceTypeBtn.setOnClickListener {
-            startActivity(Intent(this,GeometryTypesActivity::class.java))
+            startActivity(Intent(this,DatarTypesActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
         FlatTypeBtn2.setOnClickListener {
-            startActivity(Intent(this,GeometryTypesActivity::class.java))
+            startActivity(Intent(this,DatarTypesActivity::class.java))
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
 

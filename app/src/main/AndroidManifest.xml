@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.digeometri.digeometri"
     tools:ignore="ExtraText">
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +14,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".PersegiTypeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SegitigaTypeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BlhKetupatMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TrapesiumMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Layang2MainActivity"
+            android:exported="true" />
         <activity
             android:name=".JarGenMainActivity"
             android:exported="true" />
@@ -25,8 +41,8 @@
         <activity
             android:name=".PersegiMainActivity"
             android:exported="true" />
-        <activity android:name=".GeometryMainActivity" />
-        <activity android:name=".GeometryTypesActivity" />
+        <activity android:name=".SegitigaMainActivity" />
+        <activity android:name=".DatarTypesActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
